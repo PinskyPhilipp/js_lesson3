@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        console.log('Задание 1');
+        
+        let a = 1;
+        let b;
+
+        while (a <= 100) {
+            if (a == 1) {
+                b = 1
+            } else {
+                let result = 2;
+                let i = 2;
+                while (a % i !== 0) {
+                    i += 1;
+                    result += 1;
+                }
+                if (result == a) {
+                    b = result;
+                    console.log(b);
+                }
+            }
+            a += 1;
+
+        }
+
+
+        console.log('Задание 2')
+        
+        var basketArr = [10, 25, 30, 45, 50]
+        var result = basketArr.reduce(function(sum, current) {
+            return sum + current
+        });
+        console.log(basketArr);
+        console.log('Сумма всех элементов массива : ' + result);
+
+        
+        console.log('Задание 3')
+
+        var basket = ['Компьютер, Ноутбук, Смартфон'];
+
+        var basketArr = [10, 25, 30];
+
+        var result = basketArr.reduce(function(sum, current) {
+            return sum + current
+        });
+        console.log(basket);
+        console.log(basketArr);
+        console.log('Сумма всех элементов массива : ' + result);
+
+
+        console.log('Задание 4');
+        
+        for (let i = -1; i < 9; i++, console.log(i)) {};
+
+        
+        console.log('Задание 5');
+        
+        var grid = '';
+        for (var i = 1; i < 20; i++) {
+            grid += '#';
+            console.log(grid);
+        }
+
+    </script>
+</body>
+
+</html>
